@@ -1,234 +1,62 @@
+ 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameZone Esports</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #10101f;
-            color: white;
-        }
-
-        header {
-            background: linear-gradient(90deg, #6a00ff, #00bcd4);
-            text-align: center;
-            padding: 30px;
-        }
-
-        nav {
-            background-color: #19192e;
-            padding: 18px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-        }
-
-        nav a:hover {
-            color: #00ffff;
-        }
-
-        .banner {
-            text-align: center;
-            padding: 45px 20px;
-            background-color: #20203b;
-        }
-
-        .banner h2 {
-            color: #00ffff;
-            font-size: 30px;
-        }
-
-        h2 {
-            color: #bd8cff;
-            text-align: center;
-        }
-
-        .games {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 25px;
-        }
-
-        .card {
-            background-color: #20203b;
-            width: 230px;
-            padding: 20px;
-            text-align: center;
-            border: 1px solid #7048ff;
-            border-radius: 12px;
-        }
-
-        .game-icon {
-            font-size: 55px;
-        }
-
-        button {
-            background-color: #7c4dff;
-            color: white;
-            padding: 10px 18px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #00a6b7;
-        }
-
-        table {
-            width: 85%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background-color: #20203b;
-        }
-
-        th, td {
-            border: 1px solid #777;
-            padding: 12px;
-            text-align: center;
-        }
-
-        th {
-            color: #00ffff;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #19192e;
-            text-align: center;
-            padding: 18px;
-        }
-
-        @media (max-width: 600px) {
-            nav a {
-                display: inline-block;
-                margin: 8px;
-            }
-
-            table {
-                width: 100%;
-            }
-        }
-    </style>
+<title>Gaming Community</title>
+<style>
+body {
+  font-family: Arial;
+  background: #17172b;
+  color: white;
+  text-align: center;
+}
+header {
+  background: #663399;
+  padding: 20px;
+}
+section {
+  padding: 20px;
+}
+a {
+  color: yellow;
+  margin: 10px;
+}
+button {
+  padding: 10px;
+  background: orange;
+  border: none;
+}
+</style>
 </head>
-
 <body>
 
-    <header>
-        <h1>🎮 GAMEZONE ESPORTS</h1>
-        <p>Play Together. Compete Together. Win Together.</p>
-    </header>
+<header>
+<h1>Gaming Zone</h1>
+<p>Play, Compete and Connect!</p>
+</header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#games">Games</a>
-        <a href="#tournaments">Tournaments</a>
-        <a href="#teams">Teams</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+<a href="#games">Games</a>
+<a href="#events">Events</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    <div class="banner" id="home">
-        <h2>Welcome to the Gaming World!</h2>
-        <p>Discover games, meet players and explore esports tournaments.</p>
-        <a href="#games"><button>Explore Games</button></a>
-    </div>
+<section id="games">
+<h2>Popular Games</h2>
+<p>Valorant | Minecraft | BGMI</p>
+</section>
 
-    <section id="games">
-        <h2>Popular Games</h2>
+<section id="events">
+<h2>Gaming Events</h2>
+<p>Join exciting online tournaments.</p>
+<button>Join Now</button>
+</section>
 
-        <div class="games">
-            <div class="card">
-                <div class="game-icon">⚔️</div>
-                <h3>Battle Arena</h3>
-                <p>Action and strategy gaming.</p>
-                <button onclick="alert('Battle Arena selected!')">
-                    Explore
-                </button>
-            </div>
-
-            <div class="card">
-                <div class="game-icon">🏎️</div>
-                <h3>Racing Legends</h3>
-                <p>High-speed racing challenges.</p>
-                <button onclick="alert('Racing Legends selected!')">
-                    Explore
-                </button>
-            </div>
-
-            <div class="card">
-                <div class="game-icon">🏹</div>
-                <h3>Fantasy Quest</h3>
-                <p>Adventure and exploration.</p>
-                <button onclick="alert('Fantasy Quest selected!')">
-                    Explore
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section id="tournaments">
-        <h2>Upcoming Tournaments</h2>
-
-        <table>
-            <tr>
-                <th>Tournament</th>
-                <th>Date</th>
-                <th>Prize</th>
-            </tr>
-            <tr>
-                <td>Battle Championship</td>
-                <td>10 November</td>
-                <td>₹10,000</td>
-            </tr>
-            <tr>
-                <td>Racing Challenge</td>
-                <td>15 November</td>
-                <td>₹5,000</td>
-            </tr>
-            <tr>
-                <td>Fantasy Cup</td>
-                <td>20 November</td>
-                <td>₹3,000</td>
-            </tr>
-        </table>
-    </section>
-
-    <section id="teams">
-        <h2>Featured Teams</h2>
-        <div class="games">
-            <div class="card">
-                <h3>Team Phoenix</h3>
-                <p>Known for teamwork and strategy.</p>
-            </div>
-            <div class="card">
-                <h3>Team Thunder</h3>
-                <p>Focused on speed and competition.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" style="text-align:center;">
-        <h2>Contact Us</h2>
-        <p>Email: gamezone@example.com</p>
-        <p>Follow your passion for gaming!</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 GameZone Esports</p>
-    </footer>
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Email: gaming@gmail.com</p>
+</section>
 
 </body>
 </html>
+
